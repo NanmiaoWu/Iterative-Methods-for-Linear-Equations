@@ -6,7 +6,7 @@ Suppose we plan to solve the linear equation
 where A and b is known, which are n x n symmetric, positive-definite, and real matrix and n x 1 vector, respectively.
 
 One solution is direct method, the process is shown as Fig.1, which is from wiki:
-![first image]()
+<img width="1051" alt="directmethod" src="https://user-images.githubusercontent.com/29106484/61010865-a0f11f00-a33d-11e9-821b-e3a51f7006ad.png">
 
 When n is large, direct method would have huge compution cost. Instead, we apply iterative method that enables us to approximately solve it.
 
