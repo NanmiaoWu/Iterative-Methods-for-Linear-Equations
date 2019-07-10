@@ -1,15 +1,16 @@
 ## Iterative Methods
 
 Suppose we plan to solve the linear equation 
+
 ![Ax=b](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%5Cmathbf%7BA%7D%5Cmathbf%7Bx%7D%20%3D%20%5Cmathbf%7Bb%7D),
 
 where A and b is known, which are n x n symmetric, positive-definite, and real matrix and n x 1 vector, respectively.
 
-One solution is direct method, the process is shown as Fig.1, which is from wiki:
+One solution is to utilize direct methods, which provide exact solution to the linear system, for example, Gaussian elimination. However, direct methods would incur huge compution costs when n is large. In this case, instead, we apply iterative methods to approximately solving it.
 
-<img width="2160" alt="directmethod" src="https://user-images.githubusercontent.com/29106484/61011355-d0a12680-a33f-11e9-8f2c-8fa016738e19.png">
+### Conjugate Gradient
 
-However, direct method would have huge compution cost when n is large. In this case, instead, we apply iterative methods to approximately solving it.
+We first introduce conjugate gradient method.
 
 ### Arnoldi Iteration
 
