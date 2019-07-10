@@ -7,7 +7,7 @@ where A and b is known, which are n x n symmetric, positive-definite, and real m
 
 One solution is direct method, the process is shown as Fig.1, which is from wiki:
 
-<img width="1152" alt="directmethod" src="https://user-images.githubusercontent.com/29106484/61011289-98014d00-a33f-11e9-84b5-863930c7edd7.png">
+<img width="1440" alt="directmethod" src="https://user-images.githubusercontent.com/29106484/61011326-b2d3c180-a33f-11e9-8d14-01fa5e210b1a.png">
 
 However, direct method would have huge compution cost when n is large. In this case, instead, we apply iterative methods to approximately solving it.
 
