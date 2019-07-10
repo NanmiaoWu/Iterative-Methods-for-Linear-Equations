@@ -8,7 +8,7 @@ One solution is to utilize direct methods, which provide exact solution to the l
 
 ### Conjugate Gradient
 
-We first introduce conjugate gradient method.
+We first introduce conjugate gradient method. Suppose that ![conjugate vectors p](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cmathbf%7BP%7D%20%3D%20%5Cleft%20%5C%7B%20%5Cmathbf%7BP_%7B1%7D%7D%2C%20...%2C%20%5Cmathbf%7BP_%7Bn%7D%7D%20%5Cright%20%5C%7D) is a set of conjugate vectors of matrix A.
 
 ### Arnoldi Iteration
 
