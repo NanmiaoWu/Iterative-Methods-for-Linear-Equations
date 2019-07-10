@@ -4,7 +4,7 @@ Suppose we plan to solve the linear equation
 
 Ax = b,
 
-![first equation]<https://latex.codecogs.com/gif.latex?%5Cmathbf%7BA%7Dx%20%3D%20b>
+![first equation](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BA%7Dx%20%3D%20b)
 
 ### Arnoldi Iteration
 
