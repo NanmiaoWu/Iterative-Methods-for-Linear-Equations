@@ -4,7 +4,7 @@ Suppose we plan to solve the linear equation
 
 Ax = b,
 
-\mathbf{A}x = b,
+$\mathbf{A}x = b$,
 
 ### Arnoldi Iteration
 
