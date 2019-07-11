@@ -18,6 +18,10 @@ where
 
 is a set of conjugate vectors with respect to matrix A. 
 
+Let ![x*](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Ctextbf%7Bx%7D%5E%7B*%7D) denote the solution. We can express it as
+
+![x* expression](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Ctextbf%7Bx%7D%5E%7B*%7D%20%3D%5Calpha_%7B1%7D%5Ctextbf%7BP%7D_%7B1%7D&plus;...&plus;%5Calpha_%7Bn%7D%5Ctextbf%7BP%7D_%7Bn%7D).
+
 
 
 ### Arnoldi Iteration
