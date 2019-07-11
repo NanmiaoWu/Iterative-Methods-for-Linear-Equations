@@ -12,7 +12,8 @@ We first introduce conjugate gradient method. Suppose that
 
 ![conjugate vectors p](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cmathbf%7BP%7D%20%3D%20%5Cleft%20%5C%7B%20%5Cmathbf%7BP_%7B1%7D%7D%2C%20...%2C%20%5Cmathbf%7BP_%7Bn%7D%7D%20%5Cright%20%5C%7D)
 
-is a set of conjugate vectors of matrix A.
+is a set of conjugate vectors with respect to matrix A. That is,
+![what are conjugate vectors](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cmathbf%7BP_%7Bi%7D%7D%5E%7B%5Ctextup%7BT%7D%7D%5Cmathbf%7BA%7D%5Cmathbf%7BP_%7Bj%7D%7D%2C%20%5C%3B%5Cforall%20%5C%3B%5Cmathbf%7Bi%7D%20%5Cneq%20%5Cmathbf%7Bj%7D).
 
 ### Arnoldi Iteration
 
