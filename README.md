@@ -36,6 +36,7 @@ Substitute  ![alpha_i](https://latex.codecogs.com/gif.latex?%5Calpha_%7Bi%7D)  i
 
 ![x* final expression](https://latex.codecogs.com/gif.latex?x%5E%7B*%7D%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cfrac%7BP_%7Bi%7D%5E%7BT%7Db%7D%7BP_%7Bi%7D%5E%7BT%7DAP_%7Bi%7D%7DP_%7Bi%7D).
 
+Observing the above expression, we find that we do not need to calcaulate matrix inversion. Furthermore, the expression can be regarded as iterative process, wherein the nth term is added at the nth iteration.
 
 
 ### Arnoldi Iteration
