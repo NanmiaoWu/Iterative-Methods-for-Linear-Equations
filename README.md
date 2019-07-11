@@ -22,6 +22,16 @@ Let ![x*](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Ctextbf%7Bx%7D%5E
 
 ![x* expression](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Ctextbf%7Bx%7D%5E%7B*%7D%20%3D%5Calpha_%7B1%7D%5Ctextbf%7BP%7D_%7B1%7D&plus;...&plus;%5Calpha_%7Bn%7D%5Ctextbf%7BP%7D_%7Bn%7D).
 
+Therefore, we have
+
+![x* final expressin](https://latex.codecogs.com/gif.latex?P_%7Bi%7D%5E%7BT%7DAx%5E%7B*%7D%20%3D%20P_%7Bi%7D%5E%7BT%7DA%5Cleft%20%28%20%5Calpha_%7B1%7DP_%7B1%7D&plus;...&plus;%5Calpha_%7Bn%7DP_%7Bn%7D%20%5Cright%20%29%20%3D%20%5Calpha_%7Bi%7DP_%7Bi%7D%5E%7BT%7DAP_%7Bi%7D).
+
+Therefore, we have 
+
+![alpha](https://latex.codecogs.com/gif.latex?%5Calpha_%7Bi%7D%20%3D%20%5Cfrac%7BP_%7Bi%7D%5E%7BT%7DAx%5E%7B*%7D%7D%7BP_%7Bi%7D%5E%7BT%7DAP_%7Bi%7D%7D%20%3D%20%5Cfrac%7BP_%7Bi%7D%5E%7BT%7Db%7D%7BP_%7Bi%7D%5E%7BT%7DAP_%7Bi%7D%7D),
+
+which implies that we can get ![alpha_i](https://latex.codecogs.com/gif.latex?%5Calpha_%7Bi%7D) without knowing ![x*](https://latex.codecogs.com/gif.latex?x%5E%7B*%7D).
+
 
 
 ### Arnoldi Iteration
