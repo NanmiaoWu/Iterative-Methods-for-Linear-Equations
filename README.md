@@ -70,7 +70,7 @@ Therefore, we have
 
 Therefore, we have
 
-![image](https://user-images.githubusercontent.com/29106484/61150270-a9199d80-a4a8-11e9-9f33-460e612e43e0.png)
+![image](https://user-images.githubusercontent.com/29106484/61160738-46cf9580-a4c6-11e9-9a64-3453c37abe20.png)
 
 and we can express ![alpha_k](https://user-images.githubusercontent.com/29106484/61150457-188f8d00-a4a9-11e9-9456-f0b13b743838.png)
  as
