@@ -102,10 +102,14 @@ where
 
 and
 
-![beta_k](https://user-images.githubusercontent.com/29106484/61161555-e4789400-a4c9-11e9-8897-ff075b0da674.png)
+![beta_k](https://user-images.githubusercontent.com/29106484/61161555-e4789400-a4c9-11e9-8897-ff075b0da674.png).
 
-In the following, we regard ![image](https://user-images.githubusercontent.com/29106484/61152345-d0bf3480-a4ad-11e9-8819-99886da61615.png) as the projection of ![image](https://user-images.githubusercontent.com/29106484/61152369-de74ba00-a4ad-11e9-8b8b-20b30299bd9a.png)
- on the Krylov subspace.
+Let ![x1](https://user-images.githubusercontent.com/29106484/61148338-27c00c00-a4a4-11e9-81dc-bf1ddb926b33.png) denote the initial guess, ![image](https://user-images.githubusercontent.com/29106484/61161991-125ed800-a4cc-11e9-8b6a-7e0485e02552.png), the update rule is shown as follow:
+
+At k-th iteration:
+
+![image](https://user-images.githubusercontent.com/29106484/61162762-d75ea380-a4cf-11e9-8f35-5131b75ce338.png)
+
 
 ### Arnoldi Iteration
 
