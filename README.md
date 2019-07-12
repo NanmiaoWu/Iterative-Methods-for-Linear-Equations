@@ -10,7 +10,7 @@ One solution is to utilize direct methods, which provide exact solution to the l
 
 We first introduce conjugate gradient method. Suppose that 
 
-![conjugate vectors p](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cmathbf%7BP%7D%20%3D%20%5Cleft%20%5C%7B%20%5Cmathbf%7BP_%7B1%7D%7D%2C%20...%2C%20%5Cmathbf%7BP_%7Bn%7D%7D%20%5Cright%20%5C%7D),
+![conjugate vectors p](https://user-images.githubusercontent.com/29106484/61144125-a4012200-a499-11e9-94a2-1b7511091de8.png),
 
 where 
 
