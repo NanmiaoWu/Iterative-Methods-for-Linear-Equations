@@ -46,7 +46,7 @@ Observing the above expression, we find that we do not need to calcaulate matrix
 
 #### Iterative Method of Conjugate Gradient
 
-As we mentioned above, the direct menthod is costly when n is large. To avoid such cost, we can use only part of the conjugate vectors instead of all of them by carefully determinations.
+As we mentioned above, the direct menthod is costly when n is large. To avoid such cost, we dynamic gererate the conjugate vectors instead of finding all of them via direct method.
 
 ### Arnoldi Iteration
 
