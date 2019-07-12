@@ -8,7 +8,7 @@ One solution is to utilize direct methods, which provide exact solution to the l
 
 ### Conjugate Gradient
 
-We first introduce conjugate gradient method. Before we introduce the iterative algorithm, let us see the direct method, which enables us better uderstand the iterative algorithm. 
+We first introduce conjugate gradient method. Before we introduce the iterative algorithms, let us see the direct method, which enables us better uderstand the iterative algorithms. 
 
 #### Direct Method of Conjugate Gradient
 
@@ -44,9 +44,22 @@ Substitute  ![alpha_i](https://latex.codecogs.com/gif.latex?%5Calpha_%7Bi%7D)  i
 
 Observing the above expression, we find that we do not need to calcaulate matrix inversion. Furthermore, the expression can be regarded as iterative process, wherein the n-th term is added at the n-th iteration.
 
-#### Iterative Method of Conjugate Gradient
+#### Basic Iterative Method of Conjugate Gradient
 
-As we mentioned above, the direct menthod is costly when n is large. To avoid such cost, we dynamic gererate the conjugate vectors instead of finding all of them via direct method.
+As we mentioned above, the direct menthod is costly when n is large. To avoid such cost, we dynamic gererate the conjugate vectors instead of finding them via direct method.
+
+Let ![x1](https://user-images.githubusercontent.com/29106484/61148338-27c00c00-a4a4-11e9-81dc-bf1ddb926b33.png) denote the initial guess, the update rule is shown as follow:
+
+At k-th iteration:
+
+![update rule](https://user-images.githubusercontent.com/29106484/61148860-568ab200-a4a5-11e9-9fa4-be12bbc9db0c.png)
+
+where ![image](https://user-images.githubusercontent.com/29106484/61148953-918ce580-a4a5-11e9-801c-62e2734dbd04.png) is the redisual at the k-th iteration.
+
+Then, after n-th iteration, we have ![image](https://user-images.githubusercontent.com/29106484/61149016-bf722a00-a4a5-11e9-95b7-e966630f2909.png).
+
+
+#### Improved Iterative Method of Conjugate Gradient
 
 ### Arnoldi Iteration
 
