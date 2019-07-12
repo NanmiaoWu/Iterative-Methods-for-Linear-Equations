@@ -92,7 +92,7 @@ Finally, we can express ![alpha_k](https://user-images.githubusercontent.com/291
 
 #### Improved Iterative Method of Conjugate Gradient
 
-However, the above basic iterative method is still computationally expensive due to that it has to store all previous redisual vectors and directions. In the following, we regard ![image](https://user-images.githubusercontent.com/29106484/61152345-d0bf3480-a4ad-11e9-8819-99886da61615.png) as the projection of ![image](https://user-images.githubusercontent.com/29106484/61152369-de74ba00-a4ad-11e9-8b8b-20b30299bd9a.png)
+However, the above basic iterative method is still computationally expensive due to that it has to store all previous redisual vectors. A promising approach to avoid such cost is to generate a new conjugate vector by only using the previous one. In the following, we regard ![image](https://user-images.githubusercontent.com/29106484/61152345-d0bf3480-a4ad-11e9-8819-99886da61615.png) as the projection of ![image](https://user-images.githubusercontent.com/29106484/61152369-de74ba00-a4ad-11e9-8b8b-20b30299bd9a.png)
  on the Krylov subspace.
 
 ### Arnoldi Iteration
