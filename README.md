@@ -14,27 +14,27 @@ We first introduce conjugate gradient method. Suppose that
 
 where 
 
-![what are conjugate vectors](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cmathbf%7BP_%7Bi%7D%7D%5E%7B%5Ctextup%7BT%7D%7D%5Cmathbf%7BA%7D%5Cmathbf%7BP_%7Bj%7D%7D%2C%20%5C%3B%5Cforall%20%5C%3B%5Cmathbf%7Bi%7D%20%5Cneq%20%5Cmathbf%7Bj%7D),
+![what are conjugate vectors](https://user-images.githubusercontent.com/29106484/61144273-140fa800-a49a-11e9-873c-0da839707a09.png),
 
 is a set of conjugate vectors with respect to matrix A. 
 
 Let ![x*](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Ctextbf%7Bx%7D%5E%7B*%7D) denote the solution. We can express it as
 
-![x* expression](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Ctextbf%7Bx%7D%5E%7B*%7D%20%3D%5Calpha_%7B1%7D%5Ctextbf%7BP%7D_%7B1%7D&plus;...&plus;%5Calpha_%7Bn%7D%5Ctextbf%7BP%7D_%7Bn%7D).
+![x* expression](https://user-images.githubusercontent.com/29106484/61144380-5933da00-a49a-11e9-9661-61f007c730fe.png).
 
 Therefore, we have
 
-![x* second expressin](https://latex.codecogs.com/gif.latex?P_%7Bi%7D%5E%7BT%7DAx%5E%7B*%7D%20%3D%20P_%7Bi%7D%5E%7BT%7DA%5Cleft%20%28%20%5Calpha_%7B1%7DP_%7B1%7D&plus;...&plus;%5Calpha_%7Bn%7DP_%7Bn%7D%20%5Cright%20%29%20%3D%20%5Calpha_%7Bi%7DP_%7Bi%7D%5E%7BT%7DAP_%7Bi%7D).
+![x* second expressin](https://user-images.githubusercontent.com/29106484/61144490-a021cf80-a49a-11e9-9cdc-1c7770f6ff0b.png).
 
 Therefore, we have 
 
-![alpha](https://latex.codecogs.com/gif.latex?%5Calpha_%7Bi%7D%20%3D%20%5Cfrac%7BP_%7Bi%7D%5E%7BT%7DAx%5E%7B*%7D%7D%7BP_%7Bi%7D%5E%7BT%7DAP_%7Bi%7D%7D%20%3D%20%5Cfrac%7BP_%7Bi%7D%5E%7BT%7Db%7D%7BP_%7Bi%7D%5E%7BT%7DAP_%7Bi%7D%7D),
+![alpha](https://user-images.githubusercontent.com/29106484/61144604-e37c3e00-a49a-11e9-8927-23b379fce2c9.png),
 
 which implies that we can get  ![alpha_i](https://latex.codecogs.com/gif.latex?%5Calpha_%7Bi%7D)  without knowing ![x*](https://latex.codecogs.com/gif.latex?x%5E%7B*%7D).
 
 Substitute  ![alpha_i](https://latex.codecogs.com/gif.latex?%5Calpha_%7Bi%7D)  into ![x*](https://latex.codecogs.com/gif.latex?x%5E%7B*%7D), we have
 
-![x* final expression](https://latex.codecogs.com/gif.latex?x%5E%7B*%7D%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cfrac%7BP_%7Bi%7D%5E%7BT%7Db%7D%7BP_%7Bi%7D%5E%7BT%7DAP_%7Bi%7D%7DP_%7Bi%7D).
+![x* final expression](https://user-images.githubusercontent.com/29106484/61144684-2b02ca00-a49b-11e9-9d1a-c49f910a1570.png).
 
 Observing the above expression, we find that we do not need to calcaulate matrix inversion. Furthermore, the expression can be regarded as iterative process, wherein the nth term is added at the nth iteration.
 
