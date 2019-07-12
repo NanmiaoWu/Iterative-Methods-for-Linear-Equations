@@ -56,16 +56,17 @@ At k-th iteration:
 
 where ![image](https://user-images.githubusercontent.com/29106484/61148953-918ce580-a4a5-11e9-801c-62e2734dbd04.png) is the redisual at the k-th iteration.
 
-Then, after n-th iteration, we have ![image](https://user-images.githubusercontent.com/29106484/61149016-bf722a00-a4a5-11e9-95b7-e966630f2909.png).
+Then, after n-th iteration, we have ![image](https://user-images.githubusercontent.com/29106484/61160644-d6287900-a4c5-11e9-8247-e1b138aec760.png).
 
 The proof is shown as follow:
 First, we express ![image](https://user-images.githubusercontent.com/29106484/61149957-f0535e80-a4a7-11e9-94cd-de0cea69801f.png) as
 
-![expression of xs](https://user-images.githubusercontent.com/29106484/61149817-a8ccd280-a4a7-11e9-92ea-17a16233d4e4.png).
+![expression of xs](https://user-images.githubusercontent.com/29106484/61160320-a0cf5b80-a4c4-11e9-9fb6-e9351eee5be2.png).
 
 Therefore, we have
 
-![image](https://user-images.githubusercontent.com/29106484/61151377-6efdcb00-a4ab-11e9-900d-7dc08103aecf.png)
+![image](https://user-images.githubusercontent.com/29106484/61160613-ab3e2500-a4c5-11e9-8b7c-7ce87a6df824.png)
+
 
 Therefore, we have
 
