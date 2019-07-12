@@ -8,7 +8,11 @@ One solution is to utilize direct methods, which provide exact solution to the l
 
 ### Conjugate Gradient
 
-We first introduce conjugate gradient method. Suppose that 
+We first introduce conjugate gradient method. Before we introduce the iterative algorithm, let us see the direct method, which enables us better uderstand the iterative algorithm. 
+
+#### Direct Method of Conjugate Gradient
+
+Suppose that 
 
 ![conjugate vectors p](https://user-images.githubusercontent.com/29106484/61144125-a4012200-a499-11e9-94a2-1b7511091de8.png),
 
@@ -38,8 +42,11 @@ Substitute  ![alpha_i](https://latex.codecogs.com/gif.latex?%5Calpha_%7Bi%7D)  i
 
 ![x* final expression](https://user-images.githubusercontent.com/29106484/61144684-2b02ca00-a49b-11e9-9d1a-c49f910a1570.png).
 
-Observing the above expression, we find that we do not need to calcaulate matrix inversion. Furthermore, the expression can be regarded as iterative process, wherein the nth term is added at the nth iteration.
+Observing the above expression, we find that we do not need to calcaulate matrix inversion. Furthermore, the expression can be regarded as iterative process, wherein the n-th term is added at the n-th iteration.
 
+#### Iterative Method of Conjugate Gradient
+
+As we mentioned above, the direct menthod is costly when n is large. To avoid such cost, we can use only part of the conjugate vectors instead of all of them by carefully determinations.
 
 ### Arnoldi Iteration
 
