@@ -124,10 +124,10 @@ At k-th iteration:
 
 ![image](https://user-images.githubusercontent.com/29106484/61162762-d75ea380-a4cf-11e9-8f35-5131b75ce338.png)
 
-
+### Precondition Conjugate Gradient
 ### Arnoldi Iteration
 
-### Precondition Conjugate Gradient
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
