@@ -65,6 +65,10 @@ First, we express ![image](https://user-images.githubusercontent.com/29106484/61
 
 Therefore, we have
 
+![image](https://user-images.githubusercontent.com/29106484/61151377-6efdcb00-a4ab-11e9-900d-7dc08103aecf.png)
+
+Therefore, we have
+
 ![image](https://user-images.githubusercontent.com/29106484/61150270-a9199d80-a4a8-11e9-9f33-460e612e43e0.png)
 
 and we can express ![alpha_k](https://user-images.githubusercontent.com/29106484/61150457-188f8d00-a4a9-11e9-9456-f0b13b743838.png)
