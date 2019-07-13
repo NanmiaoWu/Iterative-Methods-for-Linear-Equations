@@ -134,6 +134,9 @@ The preconditioner M of matrix A is chosed such that matrix ![image](https://use
 
 #### Condition Number
 
+Condition number is used to measure how the output changes when the input has a small change. For example, for linear equation 
+![image](https://user-images.githubusercontent.com/29106484/61173623-6664cd80-a55b-11e9-8812-2434d54c94e2.png), if b has small change![image](https://user-images.githubusercontent.com/29106484/61173633-90b68b00-a55b-11e9-930a-547f7252d2e7.png), then x would have the change ![image](https://user-images.githubusercontent.com/29106484/61173648-afb51d00-a55b-11e9-8cf2-3bccd249908f.png), where ![image](https://user-images.githubusercontent.com/29106484/61173656-cd828200-a55b-11e9-8eb3-55f3e59f4300.png) are the error vectors.
+
 ### Arnoldi Iteration
 
 
