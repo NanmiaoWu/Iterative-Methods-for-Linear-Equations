@@ -171,7 +171,7 @@ Then we focus on the choices of preconditioner. If we decompose the symmetric an
 
 3. Successive over-relaxation (SOR) precondition: ![image](https://user-images.githubusercontent.com/29106484/61174418-5a7e0900-a565-11e9-9438-7fe5894320e1.png), where ![image](https://user-images.githubusercontent.com/29106484/61174446-ae88ed80-a565-11e9-9639-aa646769f6d7.png) is the relaxation parameter.
 
-4. Symmetric SOR preconditioning (SSOR): 
+4. Symmetric SOR preconditioning (SSOR): ![image](https://user-images.githubusercontent.com/29106484/61174505-c745d300-a566-11e9-95dc-28a1888ed1f5.png)
 
 
 ### Arnoldi Iteration
