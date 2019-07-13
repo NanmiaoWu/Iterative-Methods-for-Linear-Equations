@@ -125,6 +125,15 @@ At k-th iteration:
 ![image](https://user-images.githubusercontent.com/29106484/61162762-d75ea380-a4cf-11e9-8f35-5131b75ce338.png)
 
 ### Precondition Conjugate Gradient
+
+To better improve the convergence rate, we then introduce precondition conjugate gradient.
+
+#### Precondition
+
+The preconditioner M of matrix A is chosed such that matrix ![image](https://user-images.githubusercontent.com/29106484/61173498-d1150980-a559-11e9-9cb2-a865fdb0707b.png) has smaller condition number than matrix A. That is, the introducing of preconditioner can lead to the decrease of condition number, which finally results in the increase of the convergence rate. Then a question is raised, what is condition number?
+
+#### Condition Number
+
 ### Arnoldi Iteration
 
 
