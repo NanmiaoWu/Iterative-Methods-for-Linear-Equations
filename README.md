@@ -150,6 +150,7 @@ Suppose ![image](https://user-images.githubusercontent.com/29106484/61173930-518
 
 Therefore, ![image](https://user-images.githubusercontent.com/29106484/61173992-2e13be00-a560-11e9-8f12-f5e56430463d.png).
 
+
 The definition of condition number is:
 If matrix A is symmetric, which implies that it has real eigenvalues, the condition number of A is 
 ![image](https://user-images.githubusercontent.com/29106484/61174022-7c28c180-a560-11e9-8314-8ecb45c7deff.png). A is well conditioned, if the condition number is small.
@@ -160,7 +161,7 @@ The condition number is ![image](https://user-images.githubusercontent.com/29106
 #### Algorithm
 After knowing the benefit of using preconditioner, let us focus on the algorithm part, which is from Wiki:
 
-<img width="510" alt="PreconditionCG" src="https://user-images.githubusercontent.com/29106484/61174202-b5623100-a562-11e9-9b52-8c008d106a51.png">
+<img width="360" alt="PreconditionCG" src="https://user-images.githubusercontent.com/29106484/61175849-f581dd80-a57b-11e9-8d9b-495840f1a580.png">
 
 #### Choices of Preconditioner
 Then we focus on the choices of preconditioner. If we decompose the symmetric and positive definite matrix A as ![image](https://user-images.githubusercontent.com/29106484/61174340-56052080-a564-11e9-9647-48c9b51d609b.png), where ![image](https://user-images.githubusercontent.com/29106484/61175779-bd2dcf80-a57a-11e9-9492-9fb11918e0a3.png) and ![image](https://user-images.githubusercontent.com/29106484/61175782-c7e86480-a57a-11e9-89b2-b60254bce1a4.png) are strictly lower matrix and diagonal matrix, respectively. In the following, we introduce some popular preconditioners.
