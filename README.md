@@ -157,6 +157,23 @@ If matrix A is symmetric, which implies that it has real eigenvalues, the condit
 The definition of a general case is:
 The condition number is ![image](https://user-images.githubusercontent.com/29106484/61174099-46380d00-a561-11e9-8697-3912d72b7cbd.png).
 
+#### Algorithm
+After knowing the benefit of using preconditioner, let us focus on the algorithm part, which is from Wiki:
+
+<img width="510" alt="PreconditionCG" src="https://user-images.githubusercontent.com/29106484/61174202-b5623100-a562-11e9-9b52-8c008d106a51.png">
+
+#### Choices of Preconditioner
+Then we focus on the choices of preconditioner. If we decompose the symmetric and positive definite matrix A as ![image](https://user-images.githubusercontent.com/29106484/61174340-56052080-a564-11e9-9647-48c9b51d609b.png), the popular preconditioners are given as follows:
+
+1. Jacobi preconditioning: ![image](https://user-images.githubusercontent.com/29106484/61174365-92388100-a564-11e9-865f-0658069dfd02.png)
+
+2. Gauss-Seidel precondition: ![image](https://user-images.githubusercontent.com/29106484/61174414-3ae6e080-a565-11e9-8e83-8f110dd5080e.png)
+
+3. Successive over-relaxation (SOR) precondition: ![image](https://user-images.githubusercontent.com/29106484/61174418-5a7e0900-a565-11e9-9438-7fe5894320e1.png), where ![image](https://user-images.githubusercontent.com/29106484/61174446-ae88ed80-a565-11e9-9639-aa646769f6d7.png) is the relaxation parameter.
+
+4. Symmetric SOR preconditioning (SSOR): 
+
+
 ### Arnoldi Iteration
 
 
