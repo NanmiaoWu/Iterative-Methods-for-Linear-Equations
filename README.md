@@ -144,8 +144,18 @@ Substitute ![image](https://user-images.githubusercontent.com/29106484/61173656-
 Then our concern is: how a small change of ![image](https://user-images.githubusercontent.com/29106484/61173775-91502100-a55d-11e9-852f-d3a94e1ea4c5.png) would result in the change of ![image](https://user-images.githubusercontent.com/29106484/61173778-a0cf6a00-a55d-11e9-9f3d-2d07dbb8d8e3.png). Definitely, the smaller ![image](https://user-images.githubusercontent.com/29106484/61173778-a0cf6a00-a55d-11e9-9f3d-2d07dbb8d8e3.png) is better. 
 
 Instead of looking the ![image](https://user-images.githubusercontent.com/29106484/61173775-91502100-a55d-11e9-852f-d3a94e1ea4c5.png) and ![image](https://user-images.githubusercontent.com/29106484/61173778-a0cf6a00-a55d-11e9-9f3d-2d07dbb8d8e3.png), let us look at the mormalized version, that is, how a small change of ![image](https://user-images.githubusercontent.com/29106484/61173815-1d624880-a55e-11e9-93f5-f054890d15df.png) would lead to the change of ![image](https://user-images.githubusercontent.com/29106484/61173822-30751880-a55e-11e9-97d5-2d356825266c.png). Similarlly, it is better when ![image](https://user-images.githubusercontent.com/29106484/61173873-a5e0e900-a55e-11e9-9c2b-28b3ad11a3bf.png)
- is smaller.
+ is smaller. Then our goal is to find the upper bound of ![image](https://user-images.githubusercontent.com/29106484/61173873-a5e0e900-a55e-11e9-9c2b-28b3ad11a3bf.png).
+ 
+Suppose ![image](https://user-images.githubusercontent.com/29106484/61173930-518a3900-a55f-11e9-8c3e-10c41c44eee5.png) is the eigenvalue of matrix A. Then we have ![image](https://user-images.githubusercontent.com/29106484/61173965-b3e33980-a55f-11e9-9c09-0adc0710b758.png), which implies that ![image](https://user-images.githubusercontent.com/29106484/61173972-cfe6db00-a55f-11e9-984b-e628eb1140b0.png). Similarly, we have ![image](https://user-images.githubusercontent.com/29106484/61173983-09b7e180-a560-11e9-8fb6-53017f0a56b1.png).
 
+Therefore, ![image](https://user-images.githubusercontent.com/29106484/61173992-2e13be00-a560-11e9-8f12-f5e56430463d.png).
+
+The definition of condition number is:
+If matrix A is symmetric, which implies that it has real eigenvalues, the condition number of A is 
+![image](https://user-images.githubusercontent.com/29106484/61174022-7c28c180-a560-11e9-8314-8ecb45c7deff.png). A is well conditioned, if the condition number is small.
+
+The definition of a general case is:
+The condition number is ![image](https://user-images.githubusercontent.com/29106484/61174099-46380d00-a561-11e9-8697-3912d72b7cbd.png).
 
 ### Arnoldi Iteration
 
