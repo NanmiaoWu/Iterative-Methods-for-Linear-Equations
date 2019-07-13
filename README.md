@@ -163,7 +163,7 @@ After knowing the benefit of using preconditioner, let us focus on the algorithm
 <img width="510" alt="PreconditionCG" src="https://user-images.githubusercontent.com/29106484/61174202-b5623100-a562-11e9-9b52-8c008d106a51.png">
 
 #### Choices of Preconditioner
-Then we focus on the choices of preconditioner. If we decompose the symmetric and positive definite matrix A as ![image](https://user-images.githubusercontent.com/29106484/61174340-56052080-a564-11e9-9647-48c9b51d609b.png), the popular preconditioners are given as follows:
+Then we focus on the choices of preconditioner. If we decompose the symmetric and positive definite matrix A as ![image](https://user-images.githubusercontent.com/29106484/61174340-56052080-a564-11e9-9647-48c9b51d609b.png), where ![image](https://user-images.githubusercontent.com/29106484/61175779-bd2dcf80-a57a-11e9-9492-9fb11918e0a3.png) and ![image](https://user-images.githubusercontent.com/29106484/61175782-c7e86480-a57a-11e9-89b2-b60254bce1a4.png) are strictly lower matrix and diagonal matrix, respectively. In the following, we introduce some popular preconditioners.
 
 1. Jacobi preconditioning: ![image](https://user-images.githubusercontent.com/29106484/61174365-92388100-a564-11e9-865f-0658069dfd02.png)
 
@@ -172,6 +172,10 @@ Then we focus on the choices of preconditioner. If we decompose the symmetric an
 3. Successive over-relaxation (SOR) precondition: ![image](https://user-images.githubusercontent.com/29106484/61174418-5a7e0900-a565-11e9-9438-7fe5894320e1.png), where ![image](https://user-images.githubusercontent.com/29106484/61174446-ae88ed80-a565-11e9-9639-aa646769f6d7.png) is the relaxation parameter.
 
 4. Symmetric SOR preconditioning (SSOR): ![image](https://user-images.githubusercontent.com/29106484/61174505-c745d300-a566-11e9-95dc-28a1888ed1f5.png)
+
+5. Incomplete Cholesky factorization: first, we decompose A as ![image](https://user-images.githubusercontent.com/29106484/61175770-97082f80-a57a-11e9-8d70-e8d0093ce92c.png) using Cholesky factorization, where 
+
+The Cholesky factorization of a positive definite matrix A is A = LL* where L is a lower triangular matrix. An incomplete Cholesky factorization is given by a sparse lower triangular matrix K that is in some sense close to L. The corresponding preconditioner is KK*.
 
 
 ### Arnoldi Iteration
