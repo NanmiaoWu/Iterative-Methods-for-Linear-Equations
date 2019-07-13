@@ -161,7 +161,7 @@ The condition number is ![image](https://user-images.githubusercontent.com/29106
 #### Algorithm
 After knowing the benefit of using preconditioner, let us focus on the algorithm part, which is from Wiki:
 
-<img width="360" alt="PreconditionCG" src="https://user-images.githubusercontent.com/29106484/61175849-f581dd80-a57b-11e9-8d9b-495840f1a580.png">
+<img width="396" alt="PreconditionCG" src="https://user-images.githubusercontent.com/29106484/61175858-1fd39b00-a57c-11e9-88f4-234c2378f824.png">
 
 #### Choices of Preconditioner
 Then we focus on the choices of preconditioner. If we decompose the symmetric and positive definite matrix A as ![image](https://user-images.githubusercontent.com/29106484/61174340-56052080-a564-11e9-9647-48c9b51d609b.png), where ![image](https://user-images.githubusercontent.com/29106484/61175779-bd2dcf80-a57a-11e9-9492-9fb11918e0a3.png) and ![image](https://user-images.githubusercontent.com/29106484/61175782-c7e86480-a57a-11e9-89b2-b60254bce1a4.png) are strictly lower matrix and diagonal matrix, respectively. In the following, we introduce some popular preconditioners.
