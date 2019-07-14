@@ -6,6 +6,9 @@ where A and b is known, which are n x n symmetric, positive-definite, and real m
 
 One solution is to utilize direct methods, which provide exact solution to the linear system, for example, Gaussian elimination. However, direct methods would incur huge compution costs when n is large. In this case, instead, we apply iterative methods to approximately solving it.
 
+Note that all the following iterative algorithms have been implemented by [STE||AR Group
+](https://github.com/STEllAR-GROUP). Interested readers please refer to the [BlazeIterative](https://github.com/STEllAR-GROUP/BlazeIterative).
+
 ### Conjugate Gradient
 
 We first introduce conjugate gradient method. Before we introduce the iterative algorithms, let us see the direct method, which enables us better uderstand the iterative algorithms. 
