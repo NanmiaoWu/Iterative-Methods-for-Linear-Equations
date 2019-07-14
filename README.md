@@ -202,3 +202,5 @@ Arnoldi iteration is an iterative method to approximately find the eigenvalues a
 Given a matrix **A** which is m x m, and an initial vector **b**, which is m x 1, we can construct the n-th order Krylov subspace:
 
 ![image](https://user-images.githubusercontent.com/29106484/61185593-d2f5d000-a620-11e9-8dde-e29f0db78fb0.png)
+
+Suppose ![image](https://user-images.githubusercontent.com/29106484/61185779-b9558800-a622-11e9-9412-a97c576c129f.png), where **H** is an upper Hessenberg matrix, which has zero entries below the first subdiagonal. 
