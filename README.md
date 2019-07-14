@@ -137,12 +137,12 @@ To better improve the convergence rate, we then introduce precondition conjugate
 
 #### Precondition
 
-The preconditioner M of matrix A is chosed such that matrix ![image](https://user-images.githubusercontent.com/29106484/61173498-d1150980-a559-11e9-9cb2-a865fdb0707b.png) has smaller condition number than matrix A. That is, the introducing of preconditioner can lead to the decrease of condition number, which finally results in the increase of the convergence rate. Then a question is raised, what is condition number?
+The preconditioner **M** of matrix **A** is chosed such that matrix ![image](https://user-images.githubusercontent.com/29106484/61173498-d1150980-a559-11e9-9cb2-a865fdb0707b.png) has smaller condition number than matrix **A**. That is, the introducing of preconditioner can lead to the decrease of condition number, which finally results in the increase of the convergence rate. Then a question is raised, what is condition number?
 
 #### Condition Number
 
 Condition number is used to measure how the output changes when the input has a small change. For example, for linear equation 
-![image](https://user-images.githubusercontent.com/29106484/61173623-6664cd80-a55b-11e9-8812-2434d54c94e2.png), if b has small change![image](https://user-images.githubusercontent.com/29106484/61173633-90b68b00-a55b-11e9-930a-547f7252d2e7.png), then x would have the change ![image](https://user-images.githubusercontent.com/29106484/61173648-afb51d00-a55b-11e9-8cf2-3bccd249908f.png), where ![image](https://user-images.githubusercontent.com/29106484/61173656-cd828200-a55b-11e9-8eb3-55f3e59f4300.png) are the error vectors.
+**Ax = b**, if **b** has small change![image](https://user-images.githubusercontent.com/29106484/61173633-90b68b00-a55b-11e9-930a-547f7252d2e7.png), then **x** would have the change ![image](https://user-images.githubusercontent.com/29106484/61173648-afb51d00-a55b-11e9-8cf2-3bccd249908f.png), where ![image](https://user-images.githubusercontent.com/29106484/61173656-cd828200-a55b-11e9-8eb3-55f3e59f4300.png) are the error vectors.
 
 Substitute ![image](https://user-images.githubusercontent.com/29106484/61173656-cd828200-a55b-11e9-8eb3-55f3e59f4300.png) into the linear equation, we have 
 
@@ -150,20 +150,18 @@ Substitute ![image](https://user-images.githubusercontent.com/29106484/61173656-
 
 Then our concern is: how a small change of ![image](https://user-images.githubusercontent.com/29106484/61173775-91502100-a55d-11e9-852f-d3a94e1ea4c5.png) would result in the change of ![image](https://user-images.githubusercontent.com/29106484/61173778-a0cf6a00-a55d-11e9-9f3d-2d07dbb8d8e3.png). Definitely, the smaller ![image](https://user-images.githubusercontent.com/29106484/61173778-a0cf6a00-a55d-11e9-9f3d-2d07dbb8d8e3.png) is better. 
 
-Instead of looking the ![image](https://user-images.githubusercontent.com/29106484/61173775-91502100-a55d-11e9-852f-d3a94e1ea4c5.png) and ![image](https://user-images.githubusercontent.com/29106484/61173778-a0cf6a00-a55d-11e9-9f3d-2d07dbb8d8e3.png), let us look at the mormalized version, that is, how a small change of ![image](https://user-images.githubusercontent.com/29106484/61173815-1d624880-a55e-11e9-93f5-f054890d15df.png) would lead to the change of ![image](https://user-images.githubusercontent.com/29106484/61173822-30751880-a55e-11e9-97d5-2d356825266c.png). Similarlly, it is better when ![image](https://user-images.githubusercontent.com/29106484/61173873-a5e0e900-a55e-11e9-9c2b-28b3ad11a3bf.png)
+Instead of looking the ![image](https://user-images.githubusercontent.com/29106484/61173775-91502100-a55d-11e9-852f-d3a94e1ea4c5.png) and ![image](https://user-images.githubusercontent.com/29106484/61173778-a0cf6a00-a55d-11e9-9f3d-2d07dbb8d8e3.png), let us look at the normalized version, that is, how a small change of ![image](https://user-images.githubusercontent.com/29106484/61173815-1d624880-a55e-11e9-93f5-f054890d15df.png) would lead to the change of ![image](https://user-images.githubusercontent.com/29106484/61173822-30751880-a55e-11e9-97d5-2d356825266c.png). Similarlly, it is better when ![image](https://user-images.githubusercontent.com/29106484/61173873-a5e0e900-a55e-11e9-9c2b-28b3ad11a3bf.png)
  is smaller. Then our goal is to find the upper bound of ![image](https://user-images.githubusercontent.com/29106484/61173873-a5e0e900-a55e-11e9-9c2b-28b3ad11a3bf.png).
  
-Suppose ![image](https://user-images.githubusercontent.com/29106484/61173930-518a3900-a55f-11e9-8c3e-10c41c44eee5.png) is the eigenvalue of matrix A. Then we have ![image](https://user-images.githubusercontent.com/29106484/61173965-b3e33980-a55f-11e9-9c09-0adc0710b758.png), which implies that ![image](https://user-images.githubusercontent.com/29106484/61173972-cfe6db00-a55f-11e9-984b-e628eb1140b0.png). Similarly, we have ![image](https://user-images.githubusercontent.com/29106484/61173983-09b7e180-a560-11e9-8fb6-53017f0a56b1.png).
+Suppose ![image](https://user-images.githubusercontent.com/29106484/61173930-518a3900-a55f-11e9-8c3e-10c41c44eee5.png) is the eigenvalue of matrix **A**. Then we have ![image](https://user-images.githubusercontent.com/29106484/61173965-b3e33980-a55f-11e9-9c09-0adc0710b758.png), which implies that ![image](https://user-images.githubusercontent.com/29106484/61173972-cfe6db00-a55f-11e9-984b-e628eb1140b0.png). Similarly, we have ![image](https://user-images.githubusercontent.com/29106484/61173983-09b7e180-a560-11e9-8fb6-53017f0a56b1.png). Therefore, ![image](https://user-images.githubusercontent.com/29106484/61173992-2e13be00-a560-11e9-8f12-f5e56430463d.png).
 
-Therefore, ![image](https://user-images.githubusercontent.com/29106484/61173992-2e13be00-a560-11e9-8f12-f5e56430463d.png).
+Finally, the definition of condition number of **A** is: 
 
+![image](https://user-images.githubusercontent.com/29106484/61178459-f97d2200-a5b2-11e9-950f-d002177750f4.png),
 
-The definition of condition number is:
-If matrix A is symmetric, which implies that it has real eigenvalues, the condition number of A is 
-![image](https://user-images.githubusercontent.com/29106484/61174022-7c28c180-a560-11e9-8314-8ecb45c7deff.png). A is well conditioned, if the condition number is small.
+when matrix **A** is normal. **A** is said to be well-conditioned if the condition number is small. Furthermore, the definition of a general case is:
 
-The definition of a general case is:
-The condition number is ![image](https://user-images.githubusercontent.com/29106484/61174099-46380d00-a561-11e9-8697-3912d72b7cbd.png).
+![image](https://user-images.githubusercontent.com/29106484/61178473-16195a00-a5b3-11e9-81b9-3d431bbf8b26.png).
 
 #### Algorithm
 After knowing the benefit of using preconditioner, let us focus on the algorithm part, which is from Wiki:
@@ -171,15 +169,15 @@ After knowing the benefit of using preconditioner, let us focus on the algorithm
 <img width="396" alt="PreconditionCG" src="https://user-images.githubusercontent.com/29106484/61175858-1fd39b00-a57c-11e9-88f4-234c2378f824.png">
 
 #### Choices of Preconditioner
-Then we focus on the choices of preconditioner. If we decompose the symmetric and positive definite matrix A as ![image](https://user-images.githubusercontent.com/29106484/61174340-56052080-a564-11e9-9647-48c9b51d609b.png), where ![image](https://user-images.githubusercontent.com/29106484/61175779-bd2dcf80-a57a-11e9-9492-9fb11918e0a3.png) and ![image](https://user-images.githubusercontent.com/29106484/61175782-c7e86480-a57a-11e9-89b2-b60254bce1a4.png) are strictly lower matrix and diagonal matrix, respectively. In the following, we introduce some popular preconditioners.
+Then the last step is to choose a proper preconditioner. First we decompose matrix **A** as ![image](https://user-images.githubusercontent.com/29106484/61174340-56052080-a564-11e9-9647-48c9b51d609b.png), where **L** and **D** are strictly lower matrix and diagonal matrix, respectively. Next, we introduce some popular preconditioners in the following.
 
 1. Jacobi preconditioning: 
 
-![image](https://user-images.githubusercontent.com/29106484/61174365-92388100-a564-11e9-865f-0658069dfd02.png)
+**M = D**
 
 2. Gauss-Seidel precondition: 
 
-![image](https://user-images.githubusercontent.com/29106484/61174414-3ae6e080-a565-11e9-8e83-8f110dd5080e.png)
+**M = L + D**
 
 3. Successive over-relaxation (SOR) precondition: 
 
@@ -191,39 +189,11 @@ where ![image](https://user-images.githubusercontent.com/29106484/61174446-ae88e
 
 ![image](https://user-images.githubusercontent.com/29106484/61174505-c745d300-a566-11e9-95dc-28a1888ed1f5.png)
 
-5. Incomplete Cholesky factorization: first, we decompose A as ![image](https://user-images.githubusercontent.com/29106484/61175770-97082f80-a57a-11e9-8d70-e8d0093ce92c.png) using Cholesky factorization, where ![image](https://user-images.githubusercontent.com/29106484/61175795-0e3dc380-a57b-11e9-8122-3b7ce6580d30.png) here is a lower triangular matrix. Next, we will compute a sparse lower triangular matrix K, which is close to L. Specifically, the elements, which are zeros in matrix A, are set to zeros in matrix K. Finally, the preconsitioner is ![image](https://user-images.githubusercontent.com/29106484/61175824-8c9a6580-a57b-11e9-8d1c-03cb5904a9d6.png).
+5. Incomplete Cholesky factorization: 
 
+![image](https://user-images.githubusercontent.com/29106484/61175824-8c9a6580-a57b-11e9-8d1c-03cb5904a9d6.png),
+
+where matrix **K** can be computed as follow: first, we decompose matrix **A** as ![image](https://user-images.githubusercontent.com/29106484/61175770-97082f80-a57a-11e9-8d70-e8d0093ce92c.png) using Cholesky factorization, where ![image](https://user-images.githubusercontent.com/29106484/61175795-0e3dc380-a57b-11e9-8122-3b7ce6580d30.png) here is a lower triangular matrix. Next, we will compute a sparse lower triangular matrix **K**, which is close to **L**. Specifically, the elements, which are zeros in matrix **A**, are set to zeros in matrix **K**. 
 
 ### Arnoldi Iteration
 
-
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/NanmiaoWu/Iterative-Methods-for-Linear-Equations/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
