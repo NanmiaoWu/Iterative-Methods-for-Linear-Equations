@@ -10,7 +10,7 @@ Note that all the following iterative algorithms have been implemented by [STE||
 
 ### Conjugate Gradient
 
-We first introduce conjugate gradient method. Before we introduce the iterative algorithms, let us see the direct method, which enables us better uderstand the iterative algorithms. 
+We first introduce conjugate gradient method. Before we introduce the iterative algorithms, let us look at the direct method, which enables us gain a better understanding of the iterative algorithms. 
 
 #### Direct Method of Conjugate Gradient
 
@@ -110,13 +110,18 @@ Note that the proof of the above ![image](https://user-images.githubusercontent.
 
 Since ![image](https://user-images.githubusercontent.com/29106484/61163742-c7e25900-a4d5-11e9-871e-efc6479af677.png),
 
-we have ![image](https://user-images.githubusercontent.com/29106484/61163547-4d650980-a4d4-11e9-9b10-f5237d39cc42.png). Therefore, the numertor and denominator can be expressed as
+we have 
+
+![image](https://user-images.githubusercontent.com/29106484/61163547-4d650980-a4d4-11e9-9b10-f5237d39cc42.png). 
+
+Therefore, the numertor and denominator can be expressed as
 
 ![image](https://user-images.githubusercontent.com/29106484/61163638-e1cf6c00-a4d4-11e9-9aa3-38b640f2247e.png)
 
 and
 
 ![image](https://user-images.githubusercontent.com/29106484/61163704-7b971900-a4d5-11e9-9a74-2ddb7e88806b.png),
+
 respectively. Therefore, we can express ![image](https://user-images.githubusercontent.com/29106484/61163774-f4967080-a4d5-11e9-9651-664ebe6ebe6e.png) as the above.
 
 Finally, the algorithm is shown as follow:
