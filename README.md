@@ -197,7 +197,7 @@ where matrix **K** can be computed as follow: first, we decompose matrix **A** a
 
 ### Arnoldi Iteration
 
-Arnoldi iteration is an iterative method to approximately find the eigenvalues and eigenvectors of matrices by generating an orthogonal basis of Krylov subspace.
+Arnoldi iteration is an iterative method to approximately find the eigenvalues and eigenvectors of matrices by generating an orthogonal basis of Krylov subspace. 
 
 #### Krylov Subspace
 Given a matrix **A** which is m x m, and an initial vector **b**, which is m x 1, we can construct the n-th order Krylov subspace:
@@ -206,7 +206,9 @@ Given a matrix **A** which is m x m, and an initial vector **b**, which is m x 1
 
 The advantage of constructing the Krylov subspace is that we can compute the matrix-vector product instead of cope with matrix **A** directly, which is particularly useful when **A** is large, since the cost of matrix-vector product is relatively cheaper.
 
-Suppose ![image](https://user-images.githubusercontent.com/29106484/61185779-b9558800-a622-11e9-9412-a97c576c129f.png), where **H** and **Q** are m x m matrices, **H** is an upper Hessenberg matrix, which has zero entries below the first subdiagonal, and  **Q** is a unitary matrix with ![image](https://user-images.githubusercontent.com/29106484/61186005-8791f080-a625-11e9-8acb-f37c0a184472.png). Therefore, we can rewritten the expression of matrix **A** as **AQ = QH**, shown as follows:
+Suppose ![image](https://user-images.githubusercontent.com/29106484/61185779-b9558800-a622-11e9-9412-a97c576c129f.png), where **H** and **Q** are m x m matrices, **H** is an upper Hessenberg matrix, which has zero entries below the first subdiagonal, and  **Q** is a unitary matrix with ![image](https://user-images.githubusercontent.com/29106484/61186005-8791f080-a625-11e9-8acb-f37c0a184472.png). With the aid of Krylov subspace, we can reduce the matrix **A** to the upper Hessenberg matrix **H**. 
+
+First, we can rewritten the expression of matrix **A** as **AQ = QH**, shown as follows:
 
 ![image](https://user-images.githubusercontent.com/29106484/61188119-34796700-a640-11e9-901f-ddf08f36dce2.png),
 
@@ -220,6 +222,7 @@ Calculated the n-th columns of both sides, we have ![image](https://user-images.
 
 which can be regarded as a iterative process.
 
+#### Algorithm
 The algorithm is shown as follow, which is from wiki:
 
 <img width="360" alt="arnoldi" src="https://user-images.githubusercontent.com/29106484/61188359-7a83fa00-a643-11e9-84dd-237d41a29ecf.png">.
