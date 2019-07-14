@@ -203,4 +203,12 @@ Given a matrix **A** which is m x m, and an initial vector **b**, which is m x 1
 
 ![image](https://user-images.githubusercontent.com/29106484/61185593-d2f5d000-a620-11e9-8dde-e29f0db78fb0.png)
 
-Suppose ![image](https://user-images.githubusercontent.com/29106484/61185779-b9558800-a622-11e9-9412-a97c576c129f.png), where **H** and **Q** are m x m matrices, **H** is an upper Hessenberg matrix, which has zero entries below the first subdiagonal, and  **Q** is a unitary matrix with ![image](https://user-images.githubusercontent.com/29106484/61186005-8791f080-a625-11e9-8acb-f37c0a184472.png). Therefore, we can rewritten the expression of matrix **A** as ![image](https://user-images.githubusercontent.com/29106484/61186026-e6f00080-a625-11e9-8257-3a4ab37585d3.png)
+Suppose ![image](https://user-images.githubusercontent.com/29106484/61185779-b9558800-a622-11e9-9412-a97c576c129f.png), where **H** and **Q** are m x m matrices, **H** is an upper Hessenberg matrix, which has zero entries below the first subdiagonal, and  **Q** is a unitary matrix with ![image](https://user-images.githubusercontent.com/29106484/61186005-8791f080-a625-11e9-8acb-f37c0a184472.png). Therefore, we can rewritten the expression of matrix **A** as **AQ = QH**, shown as follows:
+
+![image](https://user-images.githubusercontent.com/29106484/61188119-34796700-a640-11e9-901f-ddf08f36dce2.png),
+
+where n is the dimention of Krylov subspace as mentioned. Then we write a new expression of matrix **A**, which is part of the above equation, as ![image](https://user-images.githubusercontent.com/29106484/61188186-26781600-a641-11e9-9e90-1dffd1996170.png), where ![image](https://user-images.githubusercontent.com/29106484/61188198-43ace480-a641-11e9-98f5-7e0fd32f2f09.png) and 
+
+![image](https://user-images.githubusercontent.com/29106484/61188176-05172a00-a641-11e9-94a6-560705a0619b.png).
+
+
