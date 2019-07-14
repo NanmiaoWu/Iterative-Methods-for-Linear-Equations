@@ -2,12 +2,12 @@
 
 Suppose we plan to solve the linear equation 
 ![Ax=b](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%5Cmathbf%7BA%7D%5Cmathbf%7Bx%7D%20%3D%20%5Cmathbf%7Bb%7D),
-where A and b is known, which are n x n symmetric, positive-definite, and real matrix and n x 1 vector, respectively.
+where A is n x n symmetric, positive-definite, and real matrix, and b is n x 1 vector.
 
 One solution is to utilize direct methods, which provide exact solution to the linear system, for example, Gaussian elimination. However, direct methods would incur huge compution costs when n is large. In this case, instead, we apply iterative methods to approximately solving it.
 
 Note that all the following iterative algorithms have been implemented by [STE||AR Group
-](https://github.com/STEllAR-GROUP). Interested readers please refer to the [BlazeIterative](https://github.com/STEllAR-GROUP/BlazeIterative).
+](https://github.com/STEllAR-GROUP) with the Blaze library. Interested readers please refer to the [BlazeIterative](https://github.com/STEllAR-GROUP/BlazeIterative) for details.
 
 ### Conjugate Gradient
 
