@@ -224,7 +224,7 @@ The algorithm is shown as follow, which is from wiki:
 
 <img width="360" alt="arnoldi" src="https://user-images.githubusercontent.com/29106484/61188359-7a83fa00-a643-11e9-84dd-237d41a29ecf.png">.
 
-Note that ![image](https://user-images.githubusercontent.com/29106484/61188685-98079280-a648-11e9-8965-865866cd78e8.png), which can be computed as the above algorithm, has the same eigenvalues as matrix **A**.
+Note that ![image](https://user-images.githubusercontent.com/29106484/61189180-8a094000-a64f-11e9-9a4d-2cb2add138a7.png), which can be computed using the above algorithm, has the same eigenvalues as matrix **A**.
 
 
 
