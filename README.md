@@ -206,7 +206,7 @@ Given a matrix **A** which is m x m, and an initial vector **b**, which is m x 1
 
 The advantage of constructing the Krylov subspace is that we can compute the matrix-vector product instead of cope with matrix **A** directly, which is particularly useful when **A** is large, since the cost of matrix-vector product is relatively cheaper.
 
-Suppose ![image](https://user-images.githubusercontent.com/29106484/61185779-b9558800-a622-11e9-9412-a97c576c129f.png), where **H** and **Q** are m x m matrices, **H** is an upper Hessenberg matrix, which has zero entries below the first subdiagonal, and  **Q** is a unitary matrix with ![image](https://user-images.githubusercontent.com/29106484/61186005-8791f080-a625-11e9-8acb-f37c0a184472.png). With the aid of Krylov subspace, we can reduce the matrix **A** to the upper Hessenberg matrix **H**. 
+Suppose ![image](https://user-images.githubusercontent.com/29106484/61185779-b9558800-a622-11e9-9412-a97c576c129f.png), where **H** and **Q** are m x m matrices, **H** is an upper Hessenberg matrix, which has zero entries below the first subdiagonal, and  **Q** is a unitary matrix with ![image](https://user-images.githubusercontent.com/29106484/61186005-8791f080-a625-11e9-8acb-f37c0a184472.png). With the aid of Krylov subspace, we can reduce the matrix **A** to an upper Hessenberg matrix. 
 
 First, we can rewritten the expression of matrix **A** as **AQ = QH**, shown as follows:
 
@@ -227,7 +227,7 @@ The algorithm is shown as follow, which is from wiki:
 
 <img width="360" alt="arnoldi" src="https://user-images.githubusercontent.com/29106484/61188359-7a83fa00-a643-11e9-84dd-237d41a29ecf.png">.
 
-Note that ![image](https://user-images.githubusercontent.com/29106484/61189180-8a094000-a64f-11e9-9a4d-2cb2add138a7.png), which can be computed using the above algorithm, has the same eigenvalues as matrix **A**.
+Note that ![image](https://user-images.githubusercontent.com/29106484/61189180-8a094000-a64f-11e9-9a4d-2cb2add138a7.png), which can be computed using the above algorithm, has the same eigenvalues as matrix **A**. That is how we reduce the matrix **A** to an upper Hessenberg matrix.
 
 
 
