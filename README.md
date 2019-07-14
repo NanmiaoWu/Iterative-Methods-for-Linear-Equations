@@ -211,4 +211,15 @@ where n is the dimention of Krylov subspace as mentioned. Then we write a new ex
 
 ![image](https://user-images.githubusercontent.com/29106484/61188176-05172a00-a641-11e9-94a6-560705a0619b.png).
 
+Calculated the n-th columns of both sides, we have ![image](https://user-images.githubusercontent.com/29106484/61188268-49ef9080-a642-11e9-95bb-2411e1d2f0f4.png). Therefore, we can express  ![image](https://user-images.githubusercontent.com/29106484/61188294-bbc7da00-a642-11e9-82b8-47fb289e55a6.png) as
+
+![image](https://user-images.githubusercontent.com/29106484/61188293-b074ae80-a642-11e9-9879-471aae3062f9.png),
+
+which can be regarded as a iterative process.
+
+The algorithm is shown as follow, which is from wiki:
+
+<img width="360" alt="arnoldi" src="https://user-images.githubusercontent.com/29106484/61188359-7a83fa00-a643-11e9-84dd-237d41a29ecf.png">
+
+
 
