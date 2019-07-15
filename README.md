@@ -6,7 +6,7 @@ where **A** is n x n symmetric, positive-definite, and real matrix, and **b** is
 One solution is to utilize direct methods, which provide exact solution to the linear system, for example, Gaussian elimination. However, direct methods would incur huge compution costs when n is large. In this case, instead, we apply iterative methods to approximately solving it.
 
 Note that all the following iterative algorithms have been implemented by [STE||AR Group
-](https://github.com/STEllAR-GROUP) with the Blaze library. Interested readers please refer to the [BlazeIterative](https://github.com/STEllAR-GROUP/BlazeIterative) for details.
+](https://github.com/STEllAR-GROUP) with the [Blaze library](https://bitbucket.org/blaze-lib/blaze/src/master/). Interested readers please refer to the [BlazeIterative](https://github.com/STEllAR-GROUP/BlazeIterative) for details.
 
 ### Conjugate Gradient
 
