@@ -166,8 +166,6 @@ when matrix **A** is normal. **A** is said to be well-conditioned if the conditi
 #### Algorithm
 After knowing the benefit of using preconditioner, let us focus on the algorithm part, which is from Wiki:
 
-![Screenshot from 2019-07-15 15-47-31](https://user-images.githubusercontent.com/29106484/61248052-f0f22c00-a717-11e9-94e8-3b0659595150.png)
-
 <img width="400" src="https://user-images.githubusercontent.com/29106484/61248052-f0f22c00-a717-11e9-94e8-3b0659595150.png">
 
 #### Choices of Preconditioner
