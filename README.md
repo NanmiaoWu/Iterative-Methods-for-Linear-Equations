@@ -261,3 +261,7 @@ since ![image](https://user-images.githubusercontent.com/29106484/61257210-aed7e
 2. ![image](https://user-images.githubusercontent.com/29106484/61257590-573a7700-a737-11e9-8e94-4389d4b0fde1.png)
 
 since ![image](https://user-images.githubusercontent.com/29106484/61257206-a54e7b00-a735-11e9-905f-4b4b77a9d429.png) has unit norm.
+
+The algorithm is shown as follow, which is from wiki:
+
+<img width="792" alt="Lanczos" src="https://user-images.githubusercontent.com/29106484/61257752-fb242280-a737-11e9-9297-d238aabadb3b.png">
