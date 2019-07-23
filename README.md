@@ -266,3 +266,6 @@ since ![image](https://user-images.githubusercontent.com/29106484/61257206-a54e7
 The algorithm is shown as follow, which is from wiki:
 
 <img width="792" alt="Lanczos" src="https://user-images.githubusercontent.com/29106484/61257752-fb242280-a737-11e9-9297-d238aabadb3b.png">
+
+### [GMRES](https://github.com/NanmiaoWu/Iterative-Methods-for-Linear-Equations/blob/master/GMRES.md) 
+
