@@ -131,7 +131,7 @@ At k-th iteration:
 
 ![image](https://user-images.githubusercontent.com/29106484/61162762-d75ea380-a4cf-11e9-8f35-5131b75ce338.png)
 
-### Precondition Conjugate Gradient
+### [Precondition Conjugate Gradient](https://github.com/NanmiaoWu/Iterative-Methods-for-Linear-Equations/blob/master/Precondition%20Conjugate%20Gradient.md) 
 
 To better improve the convergence rate, we then introduce precondition conjugate gradient.
 
