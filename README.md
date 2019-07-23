@@ -8,7 +8,7 @@ One solution is to utilize direct methods, which provide exact solution to the l
 Note that all the following iterative algorithms have been implemented by [STE||AR Group
 ](https://github.com/STEllAR-GROUP) with the [Blaze library](https://bitbucket.org/blaze-lib/blaze/src/master/). Interested readers please refer to the [BlazeIterative](https://github.com/STEllAR-GROUP/BlazeIterative) for details.
 
-### [Conjugate Gradient](https://github.com/NanmiaoWu/Iterative-Methods-for-Linear-Equations/blob/master/Conjugate%20Gradient) 
+### [Conjugate Gradient](https://github.com/NanmiaoWu/Iterative-Methods-for-Linear-Equations/blob/master/Conjugate%20Gradient.md) 
 
 We first introduce conjugate gradient method. Before we introduce the iterative algorithms, let us look at the direct method, which enables us gain a better understanding of the iterative algorithms. 
 
