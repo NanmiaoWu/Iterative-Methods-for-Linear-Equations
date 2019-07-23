@@ -195,7 +195,8 @@ where ![image](https://user-images.githubusercontent.com/29106484/61174446-ae88e
 
 where matrix **K** can be computed as follow: first, we decompose matrix **A** as ![image](https://user-images.githubusercontent.com/29106484/61175770-97082f80-a57a-11e9-8d70-e8d0093ce92c.png) using Cholesky factorization, where ![image](https://user-images.githubusercontent.com/29106484/61175795-0e3dc380-a57b-11e9-8122-3b7ce6580d30.png) here is a lower triangular matrix. Next, we will compute a sparse lower triangular matrix **K**, which is close to **L**. Specifically, the elements, which are zeros in matrix **A**, are set to zeros in matrix **K**. 
 
-### Arnoldi Iteration
+### [Arnoldi](https://github.com/NanmiaoWu/Iterative-Methods-for-Linear-Equations/blob/master/Arnoldi.md) 
+
 
 Arnoldi iteration is an iterative method to approximately find the eigenvalues and eigenvectors of matrices by generating an orthogonal basis of Krylov subspace. 
 
