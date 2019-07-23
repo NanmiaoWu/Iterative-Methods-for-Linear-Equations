@@ -231,7 +231,7 @@ The algorithm is shown as follow, which is from wiki:
 Note that ![image](https://user-images.githubusercontent.com/29106484/61189180-8a094000-a64f-11e9-9a4d-2cb2add138a7.png), which can be computed using the above algorithm. By removing the last row of matrix ![image](https://user-images.githubusercontent.com/29106484/61189338-99898880-a651-11e9-9ac7-53162e137e59.png), we have the n x n matrix ![image](https://user-images.githubusercontent.com/29106484/61189306-2c75f300-a651-11e9-9f52-93d045929020.png), which has the same eigenvalues as matrix **A**. That is how we reduce the matrix **A** to an upper Hessenberg matrix.
 
 
-### Lanczos
+### [Lanczos](https://github.com/NanmiaoWu/Iterative-Methods-for-Linear-Equations/blob/master/Lanczos.md) 
 
 Different from Arnoldi, here we suppose matrix **A** is an n x n Hermitian matrix and we plan to find the m most valueable eigenvalues. Let matrix **V** be an n x m matrix, which can be written as ![image](https://user-images.githubusercontent.com/29106484/61256376-3ae80b80-a732-11e9-9983-13fed202c8f7.png), where ![image](https://user-images.githubusercontent.com/29106484/61256466-81d60100-a732-11e9-82a7-e7e1b5862d95.png) are orthonormal Lanczos vectors. Let matrix **T** be a m x m tridiagonal real symmetric matrix with ![image](https://user-images.githubusercontent.com/29106484/61256853-037a5e80-a734-11e9-83c5-4d93c08ffaf6.png), which can be also written as
 
