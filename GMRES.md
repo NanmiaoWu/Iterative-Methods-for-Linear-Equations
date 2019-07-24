@@ -74,10 +74,12 @@ and
 
 ![image](https://user-images.githubusercontent.com/29106484/61804246-3342f980-adf9-11e9-8b45-5970e036961d.png).
 
-Therefore, the QR decomposition ![image](https://user-images.githubusercontent.com/29106484/61755562-d3f3d380-ad7d-11e9-8bfe-02a52d9e0c8f.png), where ![image](https://user-images.githubusercontent.com/29106484/61804463-8fa61900-adf9-11e9-823e-05bfd406b6ce.png) is the acumulated product of the rotation matrices and is unitary.
+Therefore, let us look at the QR decomposition ![image](https://user-images.githubusercontent.com/29106484/61755562-d3f3d380-ad7d-11e9-8bfe-02a52d9e0c8f.png) again. We find that ![image](https://user-images.githubusercontent.com/29106484/61804463-8fa61900-adf9-11e9-823e-05bfd406b6ce.png) is the acumulated product of the rotation matrices and is unitary.
 
-We can rewrite the target function as:
+Finally, we can rewrite the target function as:
 
 ![image](https://user-images.githubusercontent.com/29106484/61804787-27a40280-adfa-11e9-83cc-fac4bdeebe79.png),
 
 where ![image](https://user-images.githubusercontent.com/29106484/61804881-591cce00-adfa-11e9-82b4-e889e1dbe339.png).
+
+The ![image](https://user-images.githubusercontent.com/29106484/61805110-cf213500-adfa-11e9-8131-df1ae9799797.png) that minimizes the target function is ![image](https://user-images.githubusercontent.com/29106484/61805057-b6b11a80-adfa-11e9-8c11-8d1cb3294baa.png).
