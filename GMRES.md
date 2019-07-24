@@ -23,6 +23,33 @@ where (a) equation holds since
 
 and (d) equation holds since ![image](https://user-images.githubusercontent.com/29106484/61752567-bcaee900-ad71-11e9-8b11-cb14e9c2c6e5.png) is orthonormal.
 
-#### Solve Least Square Problem
-
 #### Algorithm
+In summary, the algorithm is shown as follow
+
+At k-th iteration:
+1. Compute ![image](https://user-images.githubusercontent.com/29106484/61754329-51b4e080-ad78-11e9-9865-c0441b5f8f46.png) using Arnoldi iteration;
+2. Find ![image](https://user-images.githubusercontent.com/29106484/61754386-9771a900-ad78-11e9-83af-387414cece3f.png) that minimizes ![image](https://user-images.githubusercontent.com/29106484/61754736-03084600-ad7a-11e9-99d2-b8246d3c4999.png);
+3. Compute ![image](https://user-images.githubusercontent.com/29106484/61754441-d1db4600-ad78-11e9-84d4-e445f8f777f7.png);
+4. Repeat if residual is not small yet.
+
+#### Solve Least Square Problem
+In step 3 of above algorithm, we plan to find the ![image](https://user-images.githubusercontent.com/29106484/61754386-9771a900-ad78-11e9-83af-387414cece3f.png) that minimizes ![image](https://user-images.githubusercontent.com/29106484/61754736-03084600-ad7a-11e9-99d2-b8246d3c4999.png). In the following, let us take a close look at the detailed implemention. 
+
+To solve the least square problem 
+
+![image](https://user-images.githubusercontent.com/29106484/61755151-ebca5800-ad7b-11e9-85e6-a51efdcb233f.png), 
+
+we adopt QR decomposition, shwon as follow
+
+![image](https://user-images.githubusercontent.com/29106484/61755562-d3f3d380-ad7d-11e9-8bfe-02a52d9e0c8f.png),
+
+where ![image](https://user-images.githubusercontent.com/29106484/61755585-f38afc00-ad7d-11e9-9b59-d9a5075f39ce.png) is (k+1) x (k+1) orthogonal matrix and ![image](https://user-images.githubusercontent.com/29106484/61755618-0ef60700-ad7e-11e9-8329-b6f8522df30d.png) is (k+1) x k upper triangular matrix.
+
+The difficulty is that we expect to update the decomposition of ![image](https://user-images.githubusercontent.com/29106484/61755723-77dd7f00-ad7e-11e9-868e-e10b7d45aca7.png) cheaply at each step of Arnoldi iteration. That is,
+
+![image](https://user-images.githubusercontent.com/29106484/61755894-33061800-ad7f-11e9-894b-e061729a24ae.png),
+
+where ![image](https://user-images.githubusercontent.com/29106484/61755943-6cd71e80-ad7f-11e9-946f-e6cb7bbf13a4.png).
+
+To proceed, we apply Given rotations.
+
