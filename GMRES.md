@@ -58,15 +58,26 @@ Let ![image](https://user-images.githubusercontent.com/29106484/61798057-40a6b68
 
 ![image](https://user-images.githubusercontent.com/29106484/61797929-fde4de80-aded-11e9-96d2-05eb3b95722e.png).
 
-At next step, we premultiply ![image](https://user-images.githubusercontent.com/29106484/61798057-40a6b680-adee-11e9-8a9a-aff7dcd33cd6.png) to the new column ![image](https://user-images.githubusercontent.com/29106484/61755943-6cd71e80-ad7f-11e9-946f-e6cb7bbf13a4.png) and get the rotationed column ![image](https://user-images.githubusercontent.com/29106484/61801650-bf9eed80-adf4-11e9-89e3-de7eb4bae27c.png). Append the column to previous 
+At next step, we premultiply ![image](https://user-images.githubusercontent.com/29106484/61798057-40a6b680-adee-11e9-8a9a-aff7dcd33cd6.png) to the new column ![image](https://user-images.githubusercontent.com/29106484/61755943-6cd71e80-ad7f-11e9-946f-e6cb7bbf13a4.png) and get the rotationed column ![image](https://user-images.githubusercontent.com/29106484/61803849-89fc0380-adf8-11e9-8444-30a7dd2dc376.png). Append the column to previous 
 ![image](https://user-images.githubusercontent.com/29106484/61801217-02ac9100-adf4-11e9-8b4f-5f818c7b5583.png), we have a almost triangular matrix
 
 ![image](https://user-images.githubusercontent.com/29106484/61803078-26bda180-adf7-11e9-8de0-d606827b5c98.png).
 
-In order to get a triangular matrix ![image](https://user-images.githubusercontent.com/29106484/61801745-eeb55f00-adf4-11e9-841d-3a4987a1da80.png), premultiply by ![image](https://user-images.githubusercontent.com/29106484/61801800-07257980-adf5-11e9-97b1-f1a5ae31eef2.png): ![image](https://user-images.githubusercontent.com/29106484/61802917-df371580-adf6-11e9-9f4c-1ee0835431b7.png),
+In order to get a triangular matrix ![image](https://user-images.githubusercontent.com/29106484/61801745-eeb55f00-adf4-11e9-841d-3a4987a1da80.png), premultiply by ![image](https://user-images.githubusercontent.com/29106484/61803929-a730d200-adf8-11e9-84c2-226bbc530787.png): ![image](https://user-images.githubusercontent.com/29106484/61804033-cf203580-adf8-11e9-85cb-2cd2bc0a14fb.png)
 
 where 
-![image](https://user-images.githubusercontent.com/29106484/61803302-887e0b80-adf7-11e9-8a6a-a71ab79e81f7.png),
-![image](https://user-images.githubusercontent.com/29106484/61803364-9fbcf900-adf7-11e9-9485-e08ab981db9a.png),
+![image](https://user-images.githubusercontent.com/29106484/61804136-0393f180-adf9-11e9-912a-af8dbe569248.png),
+
+![image](https://user-images.githubusercontent.com/29106484/61804194-1ad2df00-adf9-11e9-99b0-eab5515dec7b.png),
+
 and
-![image](https://user-images.githubusercontent.com/29106484/61803551-f75b6480-adf7-11e9-9eb2-a2f32484ba44.png).
+
+![image](https://user-images.githubusercontent.com/29106484/61804246-3342f980-adf9-11e9-8b45-5970e036961d.png).
+
+Therefore, the QR decomposition ![image](https://user-images.githubusercontent.com/29106484/61755562-d3f3d380-ad7d-11e9-8bfe-02a52d9e0c8f.png), where ![image](https://user-images.githubusercontent.com/29106484/61804463-8fa61900-adf9-11e9-823e-05bfd406b6ce.png) is the acumulated product of the rotation matrices and is unitary.
+
+We can rewrite the target function as:
+
+![image](https://user-images.githubusercontent.com/29106484/61804787-27a40280-adfa-11e9-83cc-fac4bdeebe79.png),
+
+where ![image](https://user-images.githubusercontent.com/29106484/61804881-591cce00-adfa-11e9-82b4-e889e1dbe339.png).
